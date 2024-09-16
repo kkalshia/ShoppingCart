@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+  </head>
+  <body>
+    <div class="fullPage" id="mainDiv">
+      <div class="cart">
+        <table class="cartTable" id="table">
+          <p class="shopping">Your Shopping List</p>
+          <td></td>
+        </table>
+      </div>
+
+      <div class="controls">
+        <form class="controlsInputs" id="add">
+          <p>Add Item To Cart</p>
+          <br />
+          <input class="input" type="text" id="ware" placeholder="Item Name" />
+          <input class="input" type="text" id="price" placeholder="Price" />
+          <input
+            class="input"
+            type="text"
+            id="quantity"
+            placeholder="Quantity"
+          />
+          <button type="submit">Subimt</button>
+          <br />
+        </form>
+
+        <form class="controlsInputs" id="remove">
+          <p>Remove Item From Cart</p>
+          <input
+            class="input"
+            type="text"
+            id="delete"
+            placeholder="Item In Cart"
+          />
+          <button type="submit">Remove</button>
+          <br />
+        </form>
+
+        <form class="controlsInputs" id="calculate">
+          <button type="submit">Calculate total price</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/simpleShoppingCart.js"></script>
+  </body>
+</html>
